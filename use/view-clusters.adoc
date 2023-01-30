@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: use/view-clusters.html 
+keywords: view cluster, cluster storage, cluster overview 
+summary: Después de añadir clústeres a Astra Control Center, puede ver detalles sobre el clúster, como su ubicación, los nodos de trabajo, los volúmenes persistentes y las clases de almacenamiento. 
+---
+= Consulte el estado y los detalles de los clústeres
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+[role="lead"]
+Después de añadir clústeres que debe gestionar Astra Control Center, puede ver detalles sobre el clúster, como su ubicación, los nodos de trabajo, los volúmenes persistentes y las clases de almacenamiento.
+
+.Pasos
+. En la interfaz de usuario de Astra Control Center, seleccione *Clusters*.
+. En la página *Clusters*, seleccione el clúster cuyos detalles desea ver.
+. Consulte la información en las pestañas *Descripción general*, *almacenamiento* y *actividad* para encontrar la información que busca.
++
+** *Descripción general*: Detalles sobre los nodos de trabajo, incluido su estado.
+** *almacenamiento*: Los volúmenes persistentes asociados con el cálculo, incluyendo la clase de almacenamiento y el estado.
+** *Actividad*: Muestra las actividades relacionadas con el cluster.
+
+
+
+
+
+NOTE: También puede ver la información del clúster a partir de Astra Control Center *Dashboard*. En la ficha *Clusters* de *Resumen de recursos*, puede seleccionar los clústeres administrados, que le llevará a la página *Clusters*. Después de llegar a la página *Clusters*, siga los pasos descritos anteriormente.

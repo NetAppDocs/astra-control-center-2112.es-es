@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: release-notes/resolved-issues.html 
+keywords: astra, control center, fixed bugs, fixes, resolved issues 
+summary: Los problemas conocidos identifican problemas por los que el uso correcto de esta versión del producto puede resultar imposible. 
+---
+= Problemas resueltos
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/release-notes/
+
+
+Estos problemas se han corregido en esta versión del producto.
+
+
+
+== Los backups adicionales se retienen como parte del backup programado
+
+A veces, uno o varios backups de Astra Control Center se retienen más allá del número especificado para retener en el programa de copia de seguridad. Estos backups adicionales deben eliminarse como parte de un backup programado, pero no se eliminan y quedan bloqueados en un `pending` estado.
+
+
+
+== La copia de seguridad o la clonación fallan en las aplicaciones que utilizan PVC con unidades decimales en Astra Control Center
+
+Los volúmenes creados con unidades decimales fallan con el proceso de copia de seguridad o clonación de Astra Control Center.
+
+
+
+== La interfaz de usuario de Astra Control Center se ralentiza para mostrar los cambios en los recursos de las aplicaciones, como los cambios de volúmenes persistentes
+
+Después de una operación de protección de datos (clonado, backup, restauración) y un cambio de tamaño posterior de volumen persistente, se demora hasta veinte minutos antes de que se muestre el tamaño del nuevo volumen en la interfaz de usuario. Este retraso en la interfaz de usuario también puede producirse cuando se agregan o modifican recursos de la aplicación. En este caso, una operación de protección de datos se realiza correctamente en minutos y se puede usar el software de gestión del back-end de almacenamiento para confirmar el cambio de tamaño del volumen.
+
+
+
+== Enlace incorrecto de la función de clúster creado por la definición de recursos personalizados de Astra Control Center durante la instalación
+
+En esta versión, la revisión para corregir el enlace de rol de clúster durante la instalación ya no es necesario.
+
+
+
+== La recogida de ASUP se ha atascado en un estado de generación o carga
+
+Si se detiene o se reinicia un pod de ASUP, es posible que una recogida de ASUP se atasque en un estado de generación o carga.
+
+
+
+== Aplicaciones y espacios de nombres implementados por el operador
+
+El operador y la aplicación que ponga en marcha deben utilizar el mismo espacio de nombres. Astra Control solo admite una aplicación implementada por un operador por espacio de nombres.
+
+
+
+== Obtenga más información
+
+* link:../release-notes/known-issues.html["Problemas conocidos"]
+* link:../release-notes/known-limitations.html["Limitaciones conocidas"]
+* link:../release-notes/known-issues-ads.html["Problemas conocidos con la vista previa de Astra Data Store y esta versión de Astra Control Center"]
+

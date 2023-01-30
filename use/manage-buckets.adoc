@@ -1,0 +1,84 @@
+---
+sidebar: sidebar 
+permalink: use/manage-buckets.html 
+keywords: how to set up object storage in astra, how to set up astra buckets, s3, astra, setting up astra control, how to set up astra control center, kubernetes 
+summary: Es esencial añadir proveedores de bloques de almacenamiento de objetos para poder realizar backups de las aplicaciones y el almacenamiento persistente de si se desean clonar aplicaciones entre varios clústeres. 
+---
+= Gestionar bloques
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+Un proveedor de bloques de almacenamiento de objetos es esencial si desea realizar backups de las aplicaciones y del almacenamiento persistente o si desea clonar aplicaciones entre clústeres. Con Astra Control Center, agregue un proveedor de almacenes de objetos como destino de copia de seguridad fuera del clúster para sus aplicaciones.
+
+No necesita un bucket si va a clonar la configuración de sus aplicaciones y el almacenamiento persistente en el mismo clúster.
+
+Utilice cualquiera de los siguientes proveedores de bloques:
+
+* ONTAP S3 de NetApp
+* StorageGRID S3 de NetApp
+* Genérico S3
+
+
+
+NOTE: Aunque Astra Control Center es compatible con Amazon S3 como proveedor de cubos de S3 genérico, Astra Control Center podría no admitir todos los proveedores de almacenes de objetos que afirman que Amazon es compatible con S3.
+
+No se puede eliminar un bloque; sin embargo, puede editarlo.
+
+Un cubo puede estar en uno de estos estados:
+
+* Pending: Se ha programado la detección del bloque.
+* Disponible: El cucharón está disponible para su uso.
+* Removido: El cucharón no está accesible actualmente.
+
+
+Para obtener instrucciones sobre cómo gestionar los cubos con la API Astra Control, consulte link:https://docs.netapp.com/us-en/astra-automation/["Información sobre API y automatización de Astra"^].
+
+Puede realizar estas tareas relacionadas con la gestión de bloques:
+
+* link:../get-started/setup_overview.html#add-a-bucket["Añadir un bucket"]
+* <<Editar un bloque>>
+
+
+
+NOTE: Los bloques de S3 de Astra Control Center no informan sobre la capacidad disponible. Antes de realizar una copia de seguridad o clonar aplicaciones gestionadas por Astra Control Center, compruebe la información de los bloques en el sistema de gestión ONTAP o StorageGRID.
+
+
+
+== Quite las credenciales
+
+Elimine las credenciales de S3 de una cuenta en cualquier momento mediante la API Astra Control.
+
+Para obtener más información, consulte https://docs.netapp.com/us-en/astra-automation/index.html["Utilice la API Astra Control"^].
+
+
+TIP: El primer conjunto de credenciales que agregue a Astra Control siempre está en uso porque Astra Control utiliza las credenciales para autenticar el bloque de copia de seguridad. Es mejor no eliminar estas credenciales.
+
+
+
+== Editar un bloque
+
+Puede cambiar la información de credenciales de acceso de un bloque y cambiar si un bloque seleccionado es el bloque predeterminado.
+
+
+NOTE: Cuando agregue un bloque, seleccione el proveedor de segmento correcto y proporcione las credenciales correctas para ese proveedor. Por ejemplo, la interfaz de usuario acepta ONTAP S3 de NetApp como tipo y acepta credenciales de StorageGRID; sin embargo, esto hará que se produzcan errores en todos los futuros backups de aplicaciones y restauraciones usando este bucket. Consulte link:../release-notes/known-issues.html#selecting-a-bucket-provider-type-with-credentials-for-another-type-causes-data-protection-failures["Notas de la versión"].
+
+.Pasos
+. En la navegación de la izquierda, seleccione *Cuchos*.
+. En el menú acciones, seleccione *Editar*.
+. Cambie cualquier información que no sea el tipo de segmento.
++
+
+TIP: No puede modificar el tipo de segmento.
+
+. Seleccione *Actualizar*.
+
+
+
+
+== Obtenga más información
+
+* https://docs.netapp.com/us-en/astra-automation/index.html["Utilice la API Astra Control"^]
+
