@@ -193,13 +193,13 @@ El entorno operativo que aloja Astra Control Center se comunica mediante los sig
 | Consumidor de métricas | Nodo de trabajo de Astra Control Center | 9090 | HTTPS | Comunicación de datos de métricas: Asegúrese de que cada clúster gestionado pueda acceder a este puerto en el clúster que aloja a Astra Control Center (se requiere una comunicación bidireccional) 
 
 
-| Astra Control Center | Servicio Cloud Insights alojado (https://cloudinsights.netapp.com)[] | 443 | HTTPS | Comunicación de Cloud Insights 
+| Astra Control Center | Servicio Cloud Insights alojado  | 443 | HTTPS | Comunicación de Cloud Insights 
 
 
-| Astra Control Center | Proveedor de bloques de almacenamiento Amazon S3 (https://my-bucket.s3.us-west-2.amazonaws.com/)[] | 443 | HTTPS | Comunicación del almacenamiento de Amazon S3 
+| Astra Control Center | Proveedor de bloques de almacenamiento Amazon S3  | 443 | HTTPS | Comunicación del almacenamiento de Amazon S3 
 
 
-| Astra Control Center | Active IQ de NetApp (https://activeiq.solidfire.com)[] | 443 | HTTPS | Comunicación ActiveIQ de NetApp 
+| Astra Control Center | Active IQ de NetApp  | 443 | HTTPS | Comunicación ActiveIQ de NetApp 
 |===
 
 
