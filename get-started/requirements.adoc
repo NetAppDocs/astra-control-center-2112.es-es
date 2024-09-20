@@ -199,7 +199,7 @@ El entorno operativo que aloja Astra Control Center se comunica mediante los sig
 | Astra Control Center | Proveedor de bloques de almacenamiento Amazon S3  | 443 | HTTPS | Comunicación del almacenamiento de Amazon S3 
 
 
-| Astra Control Center | Active IQ de NetApp  | 443 | HTTPS | Comunicación ActiveIQ de NetApp 
+| Astra Control Center | Asesor Digital (https://activeiq.solidfire.com[]) | 443 | HTTPS | Comunicación con el asesor digital 
 |===
 
 

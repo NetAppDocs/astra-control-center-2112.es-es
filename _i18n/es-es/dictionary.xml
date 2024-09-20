@@ -1106,7 +1106,6 @@
   <block id="c3314925ef2c97256c3237a450d6f4f5" category="list-text">Back-ends de almacenamiento de Trident con ONTAP 9.5 y versiones posteriores</block>
   <block id="5b4b1a973a4751fbfc2fda3bd9bac412" category="list-text">Astra Data Store back-ends</block>
   <block id="51269e2584d26b04961877ec77db6da7" category="paragraph">En un entorno conectado a la nube, Astra Control Center utiliza Cloud Insights para proporcionar supervisión y telemetría avanzadas. Ante la ausencia de una conexión con Cloud Insights, la telemetría y la supervisión limitadas (7 días de métricas) están disponibles en Astra Control Center y también se exportan a herramientas de supervisión nativas de Kubernetes (como Prometheus y Grafana) mediante puntos finales de métricas abiertas.</block>
-  <block id="1bc8163319d46bff9915aa0226885a42" category="paragraph">Astra Control Center está totalmente integrado en el ecosistema de AutoSupport y Active IQ para proporcionar a los usuarios y el soporte de NetApp información sobre solución de problemas y uso.</block>
   <block id="26849905a5aa23f71bc18ee28e352604" category="paragraph">Puede probar Astra Control Center con una licencia de evaluación de 90 días. La versión de evaluación se admite a través de opciones de correo electrónico y comunidad (canal Slack). Además, tendrá acceso a los artículos de la base de conocimientos y a la documentación desde la consola de soporte del producto.</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link">requisitos</block>
   <block id="e63cc3795b9216d59b085bd3111a248d" category="paragraph">Para instalar y utilizar Astra Control Center, tendrá que estar seguro<block ref="bdde32b2c988689d803729c06660acb4" category="inline-link-rx"></block>.</block>
@@ -1367,8 +1366,6 @@
   <block id="641aa484b65c0e7fde013bc2c73c8773" category="cell">Comunicación de Cloud Insights</block>
   <block id="dca17a8eb713c4979ff90034336d90db" category="cell">Proveedor de bloques de almacenamiento Amazon S3 <block ref="4e90f284db65fc9cd863090aa8767e3c" category="inline-link-rx"></block></block>
   <block id="30e3526a27f1ee2a9a8203d224600891" category="cell">Comunicación del almacenamiento de Amazon S3</block>
-  <block id="814db317c49c42a57e9b5fe4d5943fa8" category="cell">Active IQ de NetApp <block ref="9e45a0209dd868ae736875db61b96d9d" category="inline-link-rx"></block></block>
-  <block id="5dbf9f76b95952a36b5c81bedd95e1c8" category="cell">Comunicación ActiveIQ de NetApp</block>
   <block id="f370975993dbb1e7c1e24af01ed7986c" category="section-title">Exploradores web compatibles</block>
   <block id="5ee52824555f7e54b800612663b9f098" category="paragraph">Astra Control Center es compatible con las versiones recientes de Firefox, Safari y Chrome con una resolución mínima de 1280 x 720.</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="section-title">El futuro</block>
@@ -1828,4 +1825,7 @@
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="931607e4df934f12f0a0d0323f739e8c" category="list-text"><block ref="46bdba95fad7359beee853f2ee144260" category="inline-link-macro-rx"></block>.</block>
+  <block id="4ffa5f8c75a25d5db0add99affd09af7" category="paragraph">Astra Control Center está totalmente integrado en el ecosistema del asesor digital de AutoSupport y Active IQ (también conocido como asesor digital) para ofrecer a los usuarios y soporte de NetApp información sobre solución de problemas e uso.</block>
+  <block id="b01720cac678655d10d01884b38e0df9" category="cell">Asesor Digital <block ref="33723d61009b6ad6e20c37f5f073dad1" category="inline-link-rx"></block>)</block>
+  <block id="fffb137d34ba73dd7286c16dae165a77" category="cell">Comunicación con el asesor digital</block>
 </blocks>
